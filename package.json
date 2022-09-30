@@ -1,15 +1,10 @@
 {
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "vue": "^3.2.40"
   },
-  
-    "license": "UNLICENSED",
-  
-  
-    "scripts": {
-      "app": "node app.js"
-    }
-
-  
-
+  "license": "UNLICENSED",
+  "scripts": {
+    "app": "node app.js"
+  }
 }

@@ -1,6 +1,16 @@
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-<div id="apppp">{{ message }}</div>
+<div id="app">
+  {{ message }}, {{ messageTwo }}
+
+  <div id="insideApp">
+    {{ messageTwo }}
+  </div>
+
+
+</div>
+
+<div id="app">{{ messageTwo }}</div>
 
 <script>
   const { createApp } = Vue
@@ -8,8 +18,28 @@
   createApp({
     data() {
       return {
-        message: 'Hello Vue whyyyyyy!'
+        message: 'Hello Vue ronnieee!',
+        messageTwo: 'lucky num two'
       }
     }
-  }).mount('#apppp')
+  }).mount('#app')
+
+
+  secondRender({
+    data() {
+      return {
+        smessage: 'second render :)'
+      }
+    }
+  }).mount('#app')
+
 </script>
+
+
+<style>
+  #app {
+    color: gold;
+  }
+
+
+</style>
